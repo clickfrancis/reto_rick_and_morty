@@ -21,7 +21,6 @@ abstract class GetEntitiesService {
           nextUrl = null;
         }
       }
-
       return allEntities;
     } on DioError {
       rethrow;
