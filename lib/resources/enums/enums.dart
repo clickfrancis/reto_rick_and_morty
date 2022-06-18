@@ -1,6 +1,20 @@
-enum CharacterSpecies { human, alien, empty }
-enum CharacterStatus { alive, unknown, dead, empty }
-enum CharacterGender { male, female, unknown, empty }
+enum CharacterSpecies {
+  human,
+  alien,
+  empty,
+}
+enum CharacterStatus {
+  alive,
+  unknown,
+  dead,
+  empty,
+}
+enum CharacterGender {
+  male,
+  female,
+  unknown,
+  empty,
+}
 
 final characterSpeciesValues = {
   CharacterSpecies.alien: "Alien",
