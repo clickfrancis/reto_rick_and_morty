@@ -12,7 +12,7 @@ abstract class GetEntitiesService {
         var response = await _dio.get(nextUrl);
         try {
           var dataInfo = response.data["info"];
-          Info info = Info.fromJson(response.data["info"]);
+          Info info = Info.fromJson(dataInfo);
           nextUrl = info.next;
           allEntities.addAll(
               List<Map<String, dynamic>>.from(response.data["results"]));
@@ -21,7 +21,6 @@ abstract class GetEntitiesService {
           nextUrl = null;
         }
       }
-
       return allEntities;
     } on DioError {
       rethrow;
