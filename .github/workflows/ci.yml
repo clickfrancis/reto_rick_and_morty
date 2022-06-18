@@ -25,8 +25,3 @@ jobs:
       - run: flutter format --dry-run --set-exit-if-changed lib/
       - run: flutter format --dry-run --set-exit-if-changed test/
       - run: flutter analyze
-      - uses: dorny/test-reporter@v1.4.2
-        with:
-          name: test-results
-          path: test-results.json
-          reporter: flutter-json
