@@ -55,12 +55,20 @@ class CustomCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
-                          status,
+                        Expanded(
+                          child: Text(
+                            status,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
                       ],
                     ),
-                    Text(name),
+                    Text(
+                      name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                     const Padding(
                       padding: EdgeInsets.only(top: 16.0),
                       child: Text(AppStrings.location),
