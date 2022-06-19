@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage>
         ],
         child: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) {
-            return [const Custom_SliverAppBar()];
+            return [const CustomSliverAppBar()];
           },
           body: PageView(
             children: [

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../resources/colors/colors_app.dart';
 import '../resources/strings/app_strings.dart';
 
-class Custom_SliverAppBar extends StatelessWidget {
-  const Custom_SliverAppBar({
+class CustomSliverAppBar extends StatelessWidget {
+  const CustomSliverAppBar({
     Key? key,
   }) : super(key: key);
 
