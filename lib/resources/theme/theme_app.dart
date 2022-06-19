@@ -42,10 +42,14 @@ class ThemeApp {
             Radius.circular(15.0),
           ),
         )),
-    inputDecorationTheme: const InputDecorationTheme(
-        border: OutlineInputBorder(borderRadius: BorderRadius.zero),
+    inputDecorationTheme: InputDecorationTheme(
+        enabledBorder: OutlineInputBorder(
+            borderSide:
+                const BorderSide(color: AppColors.textField, width: 2.0),
+            borderRadius: BorderRadius.circular(5.0)),
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        labelStyle: TextStyle(color: AppColors.title, fontSize: 20)),
+        hintStyle: const TextStyle(fontSize: 20.0, color: AppColors.textField),
+        labelStyle: const TextStyle(color: AppColors.title, fontSize: 20)),
     iconTheme: const IconThemeData(
       color: AppColors.infoCircleIcon,
       size: 40,
