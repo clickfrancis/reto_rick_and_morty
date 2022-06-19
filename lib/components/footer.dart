@@ -12,7 +12,7 @@ class Footer extends StatelessWidget {
     return Container(
       color: Colors.black,
       width: MediaQuery.of(context).size.width,
-      height: 80,
+      height: 100,
       child: Container(
         clipBehavior: Clip.antiAliasWithSaveLayer,
         decoration: const BoxDecoration(

@@ -1,6 +1,6 @@
 enum CharacterSpecies { human, alien, empty }
 enum CharacterStatus { alive, unknown, dead, empty }
-enum CharacterGender { male, female, unknown, empty }
+enum CharacterGender { male, female, unknown, empty, genderless }
 
 final characterSpeciesValues = {
   CharacterSpecies.alien: "Alien",
@@ -18,5 +18,6 @@ final characterGenderValues = {
   CharacterGender.female: "Female",
   CharacterGender.male: "Male",
   CharacterGender.unknown: "unknown",
+  CharacterGender.genderless: "genderless",
   CharacterGender.empty: "",
 };

@@ -11,7 +11,7 @@ class Favorites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20, top: 30),
+      padding: const EdgeInsets.only(left: 20, top: 30, bottom: 10),
       child: Row(
         children: [
           const Text(AppStrings.showFavorites),
