@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static const buttonMenu = Color(0XFFFFFFFF);
   static const button = Color(0XFF12555F);
   static const appBar = Color(0XFF081F32);
+  static const textField = Color(0XFFFFFFFF);
   static const title = Color(0XFFFFFFFF);
   static const textButton = Color(0XFFFFFFFF);
   static const description = Color(0XFFFFFFFF);
@@ -17,4 +19,6 @@ class AppColors {
   static const textNotFound = Color(0xFF081F32);
   static const infoCircleIcon = Color(0xFF7A7A7A);
   static const borderCard = Color(0xFFB9B9B9);
+  static const backgroundOpacity = Color(0xff000000);
+  static const aliveCircle = Color(0XFFB2DF28);
 }
