@@ -3,6 +3,7 @@ class AppStrings {
   static const location = "Last Known Location";
   static const hintText = "Buscar personaje...";
   static const showFavorites = "MOSTRAR FAVORITOS:";
+  static const share = "Compartir personaje";
 
   // alerts for services
 
