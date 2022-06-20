@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty_app/page/initial_page.dart';
+
+import 'page/routes/routes.dart';
+import 'resources/theme/theme_app.dart';
 
 void main() {
-  runApp(const InitialPage());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    theme: ThemeApp.light,
+    initialRoute: Routes.splash,
+    routes: Routes.routes,
+  ));
 }
