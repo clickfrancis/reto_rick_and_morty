@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
 import '../colors/colors_app.dart';
 
+final Map<int, Color> color = {
+  50: const Color.fromRGBO(51, 153, 255, .1),
+  100: const Color.fromRGBO(51, 153, 255, .2),
+  200: const Color.fromRGBO(51, 153, 255, .3),
+  300: const Color.fromRGBO(51, 153, 255, .4),
+  400: const Color.fromRGBO(51, 153, 255, .5),
+  500: const Color.fromRGBO(51, 153, 255, .6),
+  600: const Color.fromRGBO(51, 153, 255, .7),
+  700: const Color.fromRGBO(51, 153, 255, .8),
+  800: const Color.fromRGBO(51, 153, 255, .9),
+  900: const Color.fromRGBO(51, 153, 255, 1),
+};
+
 class ThemeApp {
   static final light = ThemeData(
+    fontFamily: 'Montserrat',
     brightness: Brightness.light,
-    primarySwatch: Colors.grey,
+    primarySwatch: MaterialColor(0xFF081F32, color),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         primary: AppColors.button,
@@ -13,16 +27,27 @@ class ThemeApp {
           color: AppColors.textButton,
           fontSize: 18,
         ),
-        shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
-        ),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
       ),
     ),
     textTheme: const TextTheme(
+      headline2: TextStyle(
+        fontSize: 12,
+        color: AppColors.title,
+        fontWeight: FontWeight.w300,
+        fontFamily: 'Montserrat',
+      ),
       headline3: TextStyle(
         fontSize: 25,
         color: AppColors.title,
         fontWeight: FontWeight.w500,
+      ),
+      headline6: TextStyle(
+        fontSize: 16,
+        color: AppColors.title,
+        fontWeight: FontWeight.w800,
+        fontFamily: 'Montserrat',
       ),
       subtitle1: TextStyle(
         fontSize: 16,

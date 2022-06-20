@@ -10,8 +10,9 @@ class AppColors {
   static const description = Color(0XFFFFFFFF);
   static const textMenu = Color(0XFFFFFFFF);
   static const textMenuSelected = Color(0XFFFFFFFF);
-  static const textShowFavorites = Color(0XFF000000);
   static const favoriteCircle = Color(0XFFF0F0F0);
+  static const textShowFavorites = Color(0XFF000000);
+  static const textBlack = Color(0XFF000000);
   static const favoriteStar = Color(0xFFB9B9B9);
   static const favoriteStarSelected = Color(0xFFEEBA00);
   static const textCardCharactersName = Color(0xFF000000);
