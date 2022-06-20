@@ -4,6 +4,7 @@ import 'package:rick_and_morty_app/page/characters_genderless.dart';
 
 import '../components/custom_sliveappbar.dart';
 import '../providers/get_all_characters_bloc.dart';
+import '../providers/get_favorite_characters_bloc.dart';
 import '../providers/get_female_characters_bloc.dart';
 import '../providers/get_genderless_characters_bloc.dart';
 import '../providers/get_male_characters_bloc.dart';
@@ -41,6 +42,9 @@ class _HomePageState extends State<HomePage>
           ),
           BlocProvider<GetGenderlessCharactersBloc>(
             create: (context) => GetGenderlessCharactersBloc(),
+          ),
+          BlocProvider<GetFavoriteCharactersBloc>(
+            create: (context) => GetFavoriteCharactersBloc(),
           ),
         ],
         child: NestedScrollView(
