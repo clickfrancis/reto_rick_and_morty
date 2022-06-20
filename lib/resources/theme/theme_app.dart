@@ -42,6 +42,7 @@ class ThemeApp {
         fontSize: 25,
         color: AppColors.title,
         fontWeight: FontWeight.w500,
+        fontFamily: 'Montserrat',
       ),
       headline6: TextStyle(
         fontSize: 16,
@@ -53,6 +54,7 @@ class ThemeApp {
         fontSize: 16,
         color: AppColors.description,
         fontWeight: FontWeight.w400,
+        fontFamily: 'Montserrat',
       ),
     ),
     dialogTheme: const DialogTheme(

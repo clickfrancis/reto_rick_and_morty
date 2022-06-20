@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeApp.light,
-    initialRoute: Routes.characterPage,
+    initialRoute: Routes.splash,
     routes: Routes.routes,
   ));
 }

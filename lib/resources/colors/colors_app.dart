@@ -18,8 +18,9 @@ class AppColors {
   static const textCardCharactersName = Color(0xFF000000);
   static const textCardCharactersInfo = Color(0xFF515151);
   static const textNotFound = Color(0xFF081F32);
-  static const infoCircleIcon = Color(0xFF7A7A7A);
   static const borderCard = Color(0xFFB9B9B9);
+  static const infoCircleIcon = Color(0xFF7A7A7A);
+  static const info = Color(0xFF7A7A7A);
   static const backgroundOpacity = Color(0xff000000);
   static const aliveCircle = Color(0XFFB2DF28);
 }

@@ -5,6 +5,7 @@ import '../components/favorites.dart';
 import '../components/footer.dart';
 import '../providers/get_all_characters_bloc.dart';
 import '../providers/state/get_all_characters_state.dart';
+import 'chacaracter_page.dart';
 
 class AllGetCharacters extends StatelessWidget {
   const AllGetCharacters({
@@ -39,13 +40,24 @@ class AllGetCharacters extends StatelessWidget {
                       shrinkWrap: true,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return CustomCard(
-                          image: state.characters![index].image,
-                          status:
-                              '${state.characters![index].status} - ${state.characters![index].species}',
-                          name: state.characters![index].name,
-                          location: state.characters![index].location.name,
-                          origin: state.characters![index].origin.name,
+                        return InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (contex) => CharacterPage(
+                                    character: state.characters![index]),
+                              ),
+                            );
+                          },
+                          child: CustomCard(
+                            image: state.characters![index].image,
+                            status:
+                                '${state.characters![index].status} - ${state.characters![index].species}',
+                            name: state.characters![index].name,
+                            location: state.characters![index].location.name,
+                            origin: state.characters![index].origin.name,
+                          ),
                         );
                       }),
                 );
